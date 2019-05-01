@@ -1,38 +1,15 @@
 package com.reactor.configuration.swagger;
 
 
-import com.reactor.configuration.swagger.DuplicateGroupsDetector;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.autoconfigure.AutoConfigureBefore;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.plugin.core.PluginRegistry;
 import org.springframework.stereotype.Component;
-import springfox.documentation.service.ApiDescription;
-import springfox.documentation.service.ApiListing;
-import springfox.documentation.service.Operation;
-import springfox.documentation.service.Parameter;
-import springfox.documentation.service.PathDecorator;
+import springfox.documentation.service.*;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spi.schema.contexts.ModelContext;
-import springfox.documentation.spi.service.ApiListingBuilderPlugin;
-import springfox.documentation.spi.service.ApiListingScannerPlugin;
-import springfox.documentation.spi.service.DefaultsProviderPlugin;
-import springfox.documentation.spi.service.DocumentationPlugin;
-import springfox.documentation.spi.service.ExpandedParameterBuilderPlugin;
-import springfox.documentation.spi.service.OperationBuilderPlugin;
-import springfox.documentation.spi.service.OperationModelsProviderPlugin;
-import springfox.documentation.spi.service.ParameterBuilderPlugin;
-import springfox.documentation.spi.service.ResourceGroupingStrategy;
-import springfox.documentation.spi.service.contexts.ApiListingContext;
-import springfox.documentation.spi.service.contexts.DocumentationContext;
-import springfox.documentation.spi.service.contexts.DocumentationContextBuilder;
-import springfox.documentation.spi.service.contexts.OperationContext;
-import springfox.documentation.spi.service.contexts.ParameterContext;
-import springfox.documentation.spi.service.contexts.ParameterExpansionContext;
-import springfox.documentation.spi.service.contexts.PathContext;
-import springfox.documentation.spi.service.contexts.RequestMappingContext;
+import springfox.documentation.spi.service.*;
+import springfox.documentation.spi.service.contexts.*;
 import springfox.documentation.spring.web.SpringGroupingStrategy;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.spring.web.plugins.DocumentationPluginsManager;
@@ -44,8 +21,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Function;
 
-import static java.util.Collections.*;
-import static java.util.stream.Collectors.*;
+import static java.util.Collections.singleton;
+import static java.util.stream.Collectors.toList;
 
 @Component
 public class DocumentationPluginsManagerReplaced extends DocumentationPluginsManager {

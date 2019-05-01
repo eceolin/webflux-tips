@@ -1,0 +1,1151 @@
+
+------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
+No dependencies
+
+apiElements - API elements for main. (n)
+No dependencies
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+bootArchives - Configuration for Spring Boot archive artifacts.
+No dependencies
+
+compile - Dependencies for source set 'main' (deprecated, use 'implementation ' instead).
+No dependencies
+
+compileClasspath - Compile classpath for source set 'main'.
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot:2.2.0.M2
+|    |    |    +--- org.springframework:spring-core:5.2.0.M1
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.0.M1
+|    |    |    \--- org.springframework:spring-context:5.2.0.M1
+|    |    |         +--- org.springframework:spring-aop:5.2.0.M1
+|    |    |         |    +--- org.springframework:spring-beans:5.2.0.M1
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |         +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.0.M1
+|    |    |              \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.0.M2
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.0.M2 (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.0.M2
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.11.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.11.2
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.26
+|    |    |         \--- org.slf4j:slf4j-api:1.7.26
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.4
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    \--- org.yaml:snakeyaml:1.24
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    |    +--- org.springframework:spring-web:5.2.0.M1
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.0
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.0
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.8
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.0.M2
+|    |    \--- io.projectreactor.netty:reactor-netty:0.8.6.RELEASE
+|    |         +--- io.netty:netty-codec-http:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final
+|    |         |    |    \--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-resolver:4.1.34.Final
+|    |         |    |         \--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-handler:4.1.34.Final
+|    |         |         +--- io.netty:netty-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |         +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |         \--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         +--- io.netty:netty-codec-http2:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-handler:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-codec-http:4.1.34.Final (*)
+|    |         +--- io.netty:netty-handler:4.1.34.Final (*)
+|    |         +--- io.netty:netty-handler-proxy:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec-socks:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-codec-http:4.1.34.Final (*)
+|    |         +--- io.netty:netty-transport-native-epoll:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-transport-native-unix-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |         \--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         \--- io.projectreactor:reactor-core:3.2.8.RELEASE
+|    |              \--- org.reactivestreams:reactive-streams:1.0.2
+|    +--- jakarta.validation:jakarta.validation-api:2.0.1
+|    +--- org.hibernate.validator:hibernate-validator:6.0.16.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.2.Final
+|    |    \--- com.fasterxml:classmate:1.3.4 -> 1.5.0
+|    +--- org.springframework:spring-web:5.2.0.M1 (*)
+|    +--- org.springframework:spring-webflux:5.2.0.M1
+|    |    +--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
+|    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    \--- org.springframework:spring-web:5.2.0.M1 (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.26
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.26
++--- org.springframework.boot:spring-boot-starter-data-mongodb-reactive -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    +--- org.springframework.data:spring-data-mongodb:2.2.0.M3
+|    |    +--- org.springframework:spring-tx:5.2.0.M1
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-context:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-expression:5.2.0.M1 (*)
+|    |    +--- org.springframework.data:spring-data-commons:2.2.0.M3
+|    |    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.slf4j:slf4j-api:1.7.26
+|    |    \--- org.slf4j:slf4j-api:1.7.26
+|    +--- org.mongodb:mongodb-driver:3.10.2
+|    |    +--- org.mongodb:bson:3.10.2
+|    |    \--- org.mongodb:mongodb-driver-core:3.10.2
+|    |         \--- org.mongodb:bson:3.10.2
+|    +--- org.mongodb:mongodb-driver-async:3.10.2
+|    |    +--- org.mongodb:bson:3.10.2
+|    |    \--- org.mongodb:mongodb-driver-core:3.10.2 (*)
+|    +--- org.mongodb:mongodb-driver-reactivestreams:1.11.0
+|    |    +--- org.mongodb:mongodb-driver-async:3.10.0 -> 3.10.2 (*)
+|    |    \--- org.reactivestreams:reactive-streams:1.0.2
+|    \--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
++--- io.springfox:springfox-swagger2:3.0.0-SNAPSHOT
+|    +--- io.swagger:swagger-annotations:1.5.20
+|    +--- io.swagger:swagger-models:1.5.20
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.9.0
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.26
+|    |    \--- io.swagger:swagger-annotations:1.5.20
+|    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT
+|    |    \--- io.springfox:springfox-core:3.0.0-SNAPSHOT
+|    |         +--- net.bytebuddy:byte-buddy:1.9.10 -> 1.9.12
+|    |         +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |         +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |         +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1
+|    |         |    +--- org.springframework:spring-beans:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    +--- org.springframework:spring-context:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    +--- org.springframework:spring-aop:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |         \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1
+|    |              +--- org.springframework.plugin:spring-plugin-core:2.0.0.M1 (*)
+|    |              \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- io.springfox:springfox-schema:3.0.0-SNAPSHOT
+|    |    +--- io.springfox:springfox-core:3.0.0-SNAPSHOT (*)
+|    |    \--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    +--- io.springfox:springfox-swagger-common:3.0.0-SNAPSHOT
+|    |    +--- io.swagger:swagger-annotations:1.5.20
+|    |    +--- io.swagger:swagger-models:1.5.20 (*)
+|    |    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    |    +--- io.springfox:springfox-schema:3.0.0-SNAPSHOT (*)
+|    |    +--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT
+|    |    |    +--- io.github.classgraph:classgraph:4.1.7
+|    |    |    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    |    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    |    \--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    |    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT (*)
+|    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    \--- org.mapstruct:mapstruct:1.3.0.Final
++--- io.springfox:springfox-swagger-ui:3.0.0-SNAPSHOT
++--- io.springfox:springfox-spring-webflux:3.0.0-SNAPSHOT
+|    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    \--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT (*)
++--- de.flapdoodle.embed:de.flapdoodle.embed.mongo:2.2.0
+|    \--- de.flapdoodle.embed:de.flapdoodle.embed.process:2.1.2
+|         +--- org.apache.commons:commons-lang3:3.1 -> 3.8.1
+|         +--- net.java.dev.jna:jna:4.0.0 -> 4.5.2
+|         +--- net.java.dev.jna:jna-platform:4.0.0 -> 4.5.2
+|         |    \--- net.java.dev.jna:jna:4.5.2
+|         +--- org.apache.commons:commons-compress:1.18
+|         \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.26
+\--- cz.jirutka.spring:embedmongo-spring:1.3.1
+     +--- de.flapdoodle.embed:de.flapdoodle.embed.mongo:1.46.4 -> 2.2.0 (*)
+     +--- de.flapdoodle.embed:de.flapdoodle.embed.process:1.40.1 -> 2.1.2 (*)
+     +--- org.mongodb:mongo-java-driver:2.13.0 -> 3.10.2
+     \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.26
+
+compileOnly - Compile only dependencies for source set 'main'.
+No dependencies
+
+default - Configuration for default artifacts.
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot:2.2.0.M2
+|    |    |    +--- org.springframework:spring-core:5.2.0.M1
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.0.M1
+|    |    |    \--- org.springframework:spring-context:5.2.0.M1
+|    |    |         +--- org.springframework:spring-aop:5.2.0.M1
+|    |    |         |    +--- org.springframework:spring-beans:5.2.0.M1
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |         +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.0.M1
+|    |    |              \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.0.M2
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.0.M2 (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.0.M2
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.11.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.11.2
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.26
+|    |    |         \--- org.slf4j:slf4j-api:1.7.26
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.4
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    \--- org.yaml:snakeyaml:1.24
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    |    +--- org.springframework:spring-web:5.2.0.M1
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.0
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.0
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.8
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.0.M2
+|    |    \--- io.projectreactor.netty:reactor-netty:0.8.6.RELEASE
+|    |         +--- io.netty:netty-codec-http:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final
+|    |         |    |    \--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-resolver:4.1.34.Final
+|    |         |    |         \--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-handler:4.1.34.Final
+|    |         |         +--- io.netty:netty-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |         +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |         \--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         +--- io.netty:netty-codec-http2:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-handler:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-codec-http:4.1.34.Final (*)
+|    |         +--- io.netty:netty-handler:4.1.34.Final (*)
+|    |         +--- io.netty:netty-handler-proxy:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec-socks:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-codec-http:4.1.34.Final (*)
+|    |         +--- io.netty:netty-transport-native-epoll:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-transport-native-unix-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |         \--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         \--- io.projectreactor:reactor-core:3.2.8.RELEASE
+|    |              \--- org.reactivestreams:reactive-streams:1.0.2
+|    +--- jakarta.validation:jakarta.validation-api:2.0.1
+|    +--- org.hibernate.validator:hibernate-validator:6.0.16.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.2.Final
+|    |    \--- com.fasterxml:classmate:1.3.4 -> 1.5.0
+|    +--- org.springframework:spring-web:5.2.0.M1 (*)
+|    +--- org.springframework:spring-webflux:5.2.0.M1
+|    |    +--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
+|    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    \--- org.springframework:spring-web:5.2.0.M1 (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.26
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.26
++--- org.springframework.boot:spring-boot-starter-data-mongodb-reactive -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    +--- org.springframework.data:spring-data-mongodb:2.2.0.M3
+|    |    +--- org.springframework:spring-tx:5.2.0.M1
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-context:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-expression:5.2.0.M1 (*)
+|    |    +--- org.springframework.data:spring-data-commons:2.2.0.M3
+|    |    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.slf4j:slf4j-api:1.7.26
+|    |    \--- org.slf4j:slf4j-api:1.7.26
+|    +--- org.mongodb:mongodb-driver:3.10.2
+|    |    +--- org.mongodb:bson:3.10.2
+|    |    \--- org.mongodb:mongodb-driver-core:3.10.2
+|    |         \--- org.mongodb:bson:3.10.2
+|    +--- org.mongodb:mongodb-driver-async:3.10.2
+|    |    +--- org.mongodb:bson:3.10.2
+|    |    \--- org.mongodb:mongodb-driver-core:3.10.2 (*)
+|    +--- org.mongodb:mongodb-driver-reactivestreams:1.11.0
+|    |    +--- org.mongodb:mongodb-driver-async:3.10.0 -> 3.10.2 (*)
+|    |    \--- org.reactivestreams:reactive-streams:1.0.2
+|    \--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
++--- io.springfox:springfox-swagger2:3.0.0-SNAPSHOT
+|    +--- io.swagger:swagger-annotations:1.5.20
+|    +--- io.swagger:swagger-models:1.5.20
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.9.0
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.26
+|    |    \--- io.swagger:swagger-annotations:1.5.20
+|    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT
+|    |    \--- io.springfox:springfox-core:3.0.0-SNAPSHOT
+|    |         +--- net.bytebuddy:byte-buddy:1.9.10 -> 1.9.12
+|    |         +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |         +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |         +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1
+|    |         |    +--- org.springframework:spring-beans:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    +--- org.springframework:spring-context:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    +--- org.springframework:spring-aop:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |         \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1
+|    |              +--- org.springframework.plugin:spring-plugin-core:2.0.0.M1 (*)
+|    |              \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- io.springfox:springfox-schema:3.0.0-SNAPSHOT
+|    |    +--- io.springfox:springfox-core:3.0.0-SNAPSHOT (*)
+|    |    \--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    +--- io.springfox:springfox-swagger-common:3.0.0-SNAPSHOT
+|    |    +--- io.swagger:swagger-annotations:1.5.20
+|    |    +--- io.swagger:swagger-models:1.5.20 (*)
+|    |    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    |    +--- io.springfox:springfox-schema:3.0.0-SNAPSHOT (*)
+|    |    +--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT
+|    |    |    +--- io.github.classgraph:classgraph:4.1.7
+|    |    |    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    |    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    |    \--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    |    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT (*)
+|    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    \--- org.mapstruct:mapstruct:1.3.0.Final
++--- io.springfox:springfox-swagger-ui:3.0.0-SNAPSHOT
++--- io.springfox:springfox-spring-webflux:3.0.0-SNAPSHOT
+|    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    \--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT (*)
++--- de.flapdoodle.embed:de.flapdoodle.embed.mongo:2.2.0
+|    \--- de.flapdoodle.embed:de.flapdoodle.embed.process:2.1.2
+|         +--- org.apache.commons:commons-lang3:3.1 -> 3.8.1
+|         +--- net.java.dev.jna:jna:4.0.0 -> 4.5.2
+|         +--- net.java.dev.jna:jna-platform:4.0.0 -> 4.5.2
+|         |    \--- net.java.dev.jna:jna:4.5.2
+|         +--- org.apache.commons:commons-compress:1.18
+|         \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.26
++--- cz.jirutka.spring:embedmongo-spring:1.3.1
+|    +--- de.flapdoodle.embed:de.flapdoodle.embed.mongo:1.46.4 -> 2.2.0 (*)
+|    +--- de.flapdoodle.embed:de.flapdoodle.embed.process:1.40.1 -> 2.1.2 (*)
+|    +--- org.mongodb:mongo-java-driver:2.13.0 -> 3.10.2
+|    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.26
+\--- org.springframework.boot:spring-boot-devtools -> 2.2.0.M2
+     +--- org.springframework.boot:spring-boot:2.2.0.M2 (*)
+     \--- org.springframework.boot:spring-boot-autoconfigure:2.2.0.M2 (*)
+
+implementation - Implementation only dependencies for source set 'main'. (n)
++--- org.springframework.boot:spring-boot-starter-webflux (n)
++--- org.springframework.boot:spring-boot-starter-data-mongodb-reactive (n)
++--- io.springfox:springfox-swagger2:3.0.0-SNAPSHOT (n)
++--- io.springfox:springfox-swagger-ui:3.0.0-SNAPSHOT (n)
++--- io.springfox:springfox-spring-webflux:3.0.0-SNAPSHOT (n)
++--- de.flapdoodle.embed:de.flapdoodle.embed.mongo:2.2.0 (n)
+\--- cz.jirutka.spring:embedmongo-spring:1.3.1 (n)
+
+runtime - Runtime dependencies for source set 'main' (deprecated, use 'runtimeOnly ' instead).
+No dependencies
+
+runtimeClasspath - Runtime classpath of source set 'main'.
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot:2.2.0.M2
+|    |    |    +--- org.springframework:spring-core:5.2.0.M1
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.0.M1
+|    |    |    \--- org.springframework:spring-context:5.2.0.M1
+|    |    |         +--- org.springframework:spring-aop:5.2.0.M1
+|    |    |         |    +--- org.springframework:spring-beans:5.2.0.M1
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |         +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.0.M1
+|    |    |              \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.0.M2
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.0.M2 (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.0.M2
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.11.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.11.2
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.26
+|    |    |         \--- org.slf4j:slf4j-api:1.7.26
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.4
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    \--- org.yaml:snakeyaml:1.24
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    |    +--- org.springframework:spring-web:5.2.0.M1
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.0
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.0
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.8
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.0.M2
+|    |    \--- io.projectreactor.netty:reactor-netty:0.8.6.RELEASE
+|    |         +--- io.netty:netty-codec-http:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final
+|    |         |    |    \--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-resolver:4.1.34.Final
+|    |         |    |         \--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-handler:4.1.34.Final
+|    |         |         +--- io.netty:netty-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |         +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |         \--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         +--- io.netty:netty-codec-http2:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-handler:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-codec-http:4.1.34.Final (*)
+|    |         +--- io.netty:netty-handler:4.1.34.Final (*)
+|    |         +--- io.netty:netty-handler-proxy:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec-socks:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-codec-http:4.1.34.Final (*)
+|    |         +--- io.netty:netty-transport-native-epoll:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-transport-native-unix-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |         \--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         \--- io.projectreactor:reactor-core:3.2.8.RELEASE
+|    |              \--- org.reactivestreams:reactive-streams:1.0.2
+|    +--- jakarta.validation:jakarta.validation-api:2.0.1
+|    +--- org.hibernate.validator:hibernate-validator:6.0.16.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.2.Final
+|    |    \--- com.fasterxml:classmate:1.3.4 -> 1.5.0
+|    +--- org.springframework:spring-web:5.2.0.M1 (*)
+|    +--- org.springframework:spring-webflux:5.2.0.M1
+|    |    +--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
+|    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    \--- org.springframework:spring-web:5.2.0.M1 (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.26
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.26
++--- org.springframework.boot:spring-boot-starter-data-mongodb-reactive -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    +--- org.springframework.data:spring-data-mongodb:2.2.0.M3
+|    |    +--- org.springframework:spring-tx:5.2.0.M1
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-context:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-expression:5.2.0.M1 (*)
+|    |    +--- org.springframework.data:spring-data-commons:2.2.0.M3
+|    |    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.slf4j:slf4j-api:1.7.26
+|    |    \--- org.slf4j:slf4j-api:1.7.26
+|    +--- org.mongodb:mongodb-driver:3.10.2
+|    |    +--- org.mongodb:bson:3.10.2
+|    |    \--- org.mongodb:mongodb-driver-core:3.10.2
+|    |         \--- org.mongodb:bson:3.10.2
+|    +--- org.mongodb:mongodb-driver-async:3.10.2
+|    |    +--- org.mongodb:bson:3.10.2
+|    |    \--- org.mongodb:mongodb-driver-core:3.10.2 (*)
+|    +--- org.mongodb:mongodb-driver-reactivestreams:1.11.0
+|    |    +--- org.mongodb:mongodb-driver-async:3.10.0 -> 3.10.2 (*)
+|    |    \--- org.reactivestreams:reactive-streams:1.0.2
+|    \--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
++--- io.springfox:springfox-swagger2:3.0.0-SNAPSHOT
+|    +--- io.swagger:swagger-annotations:1.5.20
+|    +--- io.swagger:swagger-models:1.5.20
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.9.0
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.26
+|    |    \--- io.swagger:swagger-annotations:1.5.20
+|    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT
+|    |    \--- io.springfox:springfox-core:3.0.0-SNAPSHOT
+|    |         +--- net.bytebuddy:byte-buddy:1.9.10 -> 1.9.12
+|    |         +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |         +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |         +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1
+|    |         |    +--- org.springframework:spring-beans:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    +--- org.springframework:spring-context:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    +--- org.springframework:spring-aop:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |         \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1
+|    |              +--- org.springframework.plugin:spring-plugin-core:2.0.0.M1 (*)
+|    |              \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- io.springfox:springfox-schema:3.0.0-SNAPSHOT
+|    |    +--- io.springfox:springfox-core:3.0.0-SNAPSHOT (*)
+|    |    \--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    +--- io.springfox:springfox-swagger-common:3.0.0-SNAPSHOT
+|    |    +--- io.swagger:swagger-annotations:1.5.20
+|    |    +--- io.swagger:swagger-models:1.5.20 (*)
+|    |    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    |    +--- io.springfox:springfox-schema:3.0.0-SNAPSHOT (*)
+|    |    +--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT
+|    |    |    +--- io.github.classgraph:classgraph:4.1.7
+|    |    |    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    |    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    |    \--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    |    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT (*)
+|    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    \--- org.mapstruct:mapstruct:1.3.0.Final
++--- io.springfox:springfox-swagger-ui:3.0.0-SNAPSHOT
++--- io.springfox:springfox-spring-webflux:3.0.0-SNAPSHOT
+|    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    \--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT (*)
++--- de.flapdoodle.embed:de.flapdoodle.embed.mongo:2.2.0
+|    \--- de.flapdoodle.embed:de.flapdoodle.embed.process:2.1.2
+|         +--- org.apache.commons:commons-lang3:3.1 -> 3.8.1
+|         +--- net.java.dev.jna:jna:4.0.0 -> 4.5.2
+|         +--- net.java.dev.jna:jna-platform:4.0.0 -> 4.5.2
+|         |    \--- net.java.dev.jna:jna:4.5.2
+|         +--- org.apache.commons:commons-compress:1.18
+|         \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.26
++--- cz.jirutka.spring:embedmongo-spring:1.3.1
+|    +--- de.flapdoodle.embed:de.flapdoodle.embed.mongo:1.46.4 -> 2.2.0 (*)
+|    +--- de.flapdoodle.embed:de.flapdoodle.embed.process:1.40.1 -> 2.1.2 (*)
+|    +--- org.mongodb:mongo-java-driver:2.13.0 -> 3.10.2
+|    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.26
+\--- org.springframework.boot:spring-boot-devtools -> 2.2.0.M2
+     +--- org.springframework.boot:spring-boot:2.2.0.M2 (*)
+     \--- org.springframework.boot:spring-boot-autoconfigure:2.2.0.M2 (*)
+
+runtimeElements - Elements of runtime for main. (n)
+No dependencies
+
+runtimeOnly - Runtime only dependencies for source set 'main'. (n)
+\--- org.springframework.boot:spring-boot-devtools (n)
+
+testAnnotationProcessor - Annotation processors and their dependencies for source set 'test'.
+No dependencies
+
+testCompile - Dependencies for source set 'test' (deprecated, use 'testImplementation ' instead).
+No dependencies
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot:2.2.0.M2
+|    |    |    +--- org.springframework:spring-core:5.2.0.M1
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.0.M1
+|    |    |    \--- org.springframework:spring-context:5.2.0.M1
+|    |    |         +--- org.springframework:spring-aop:5.2.0.M1
+|    |    |         |    +--- org.springframework:spring-beans:5.2.0.M1
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |         +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.0.M1
+|    |    |              \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.0.M2
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.0.M2 (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.0.M2
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.11.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.11.2
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.26
+|    |    |         \--- org.slf4j:slf4j-api:1.7.26
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.4
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    \--- org.yaml:snakeyaml:1.24
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    |    +--- org.springframework:spring-web:5.2.0.M1
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.0
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.0
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.8
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.0.M2
+|    |    \--- io.projectreactor.netty:reactor-netty:0.8.6.RELEASE
+|    |         +--- io.netty:netty-codec-http:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final
+|    |         |    |    \--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-resolver:4.1.34.Final
+|    |         |    |         \--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-handler:4.1.34.Final
+|    |         |         +--- io.netty:netty-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |         +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |         \--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         +--- io.netty:netty-codec-http2:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-handler:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-codec-http:4.1.34.Final (*)
+|    |         +--- io.netty:netty-handler:4.1.34.Final (*)
+|    |         +--- io.netty:netty-handler-proxy:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec-socks:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-codec-http:4.1.34.Final (*)
+|    |         +--- io.netty:netty-transport-native-epoll:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-transport-native-unix-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |         \--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         \--- io.projectreactor:reactor-core:3.2.8.RELEASE
+|    |              \--- org.reactivestreams:reactive-streams:1.0.2
+|    +--- jakarta.validation:jakarta.validation-api:2.0.1
+|    +--- org.hibernate.validator:hibernate-validator:6.0.16.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.2.Final
+|    |    \--- com.fasterxml:classmate:1.3.4 -> 1.5.0
+|    +--- org.springframework:spring-web:5.2.0.M1 (*)
+|    +--- org.springframework:spring-webflux:5.2.0.M1
+|    |    +--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
+|    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    \--- org.springframework:spring-web:5.2.0.M1 (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.26
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.26
++--- org.springframework.boot:spring-boot-starter-data-mongodb-reactive -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    +--- org.springframework.data:spring-data-mongodb:2.2.0.M3
+|    |    +--- org.springframework:spring-tx:5.2.0.M1
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-context:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-expression:5.2.0.M1 (*)
+|    |    +--- org.springframework.data:spring-data-commons:2.2.0.M3
+|    |    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.slf4j:slf4j-api:1.7.26
+|    |    \--- org.slf4j:slf4j-api:1.7.26
+|    +--- org.mongodb:mongodb-driver:3.10.2
+|    |    +--- org.mongodb:bson:3.10.2
+|    |    \--- org.mongodb:mongodb-driver-core:3.10.2
+|    |         \--- org.mongodb:bson:3.10.2
+|    +--- org.mongodb:mongodb-driver-async:3.10.2
+|    |    +--- org.mongodb:bson:3.10.2
+|    |    \--- org.mongodb:mongodb-driver-core:3.10.2 (*)
+|    +--- org.mongodb:mongodb-driver-reactivestreams:1.11.0
+|    |    +--- org.mongodb:mongodb-driver-async:3.10.0 -> 3.10.2 (*)
+|    |    \--- org.reactivestreams:reactive-streams:1.0.2
+|    \--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
++--- io.springfox:springfox-swagger2:3.0.0-SNAPSHOT
+|    +--- io.swagger:swagger-annotations:1.5.20
+|    +--- io.swagger:swagger-models:1.5.20
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.9.0
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.26
+|    |    \--- io.swagger:swagger-annotations:1.5.20
+|    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT
+|    |    \--- io.springfox:springfox-core:3.0.0-SNAPSHOT
+|    |         +--- net.bytebuddy:byte-buddy:1.9.10 -> 1.9.12
+|    |         +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |         +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |         +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1
+|    |         |    +--- org.springframework:spring-beans:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    +--- org.springframework:spring-context:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    +--- org.springframework:spring-aop:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |         \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1
+|    |              +--- org.springframework.plugin:spring-plugin-core:2.0.0.M1 (*)
+|    |              \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- io.springfox:springfox-schema:3.0.0-SNAPSHOT
+|    |    +--- io.springfox:springfox-core:3.0.0-SNAPSHOT (*)
+|    |    \--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    +--- io.springfox:springfox-swagger-common:3.0.0-SNAPSHOT
+|    |    +--- io.swagger:swagger-annotations:1.5.20
+|    |    +--- io.swagger:swagger-models:1.5.20 (*)
+|    |    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    |    +--- io.springfox:springfox-schema:3.0.0-SNAPSHOT (*)
+|    |    +--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT
+|    |    |    +--- io.github.classgraph:classgraph:4.1.7
+|    |    |    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    |    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    |    \--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    |    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT (*)
+|    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    \--- org.mapstruct:mapstruct:1.3.0.Final
++--- io.springfox:springfox-swagger-ui:3.0.0-SNAPSHOT
++--- io.springfox:springfox-spring-webflux:3.0.0-SNAPSHOT
+|    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    \--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT (*)
++--- de.flapdoodle.embed:de.flapdoodle.embed.mongo:2.2.0
+|    \--- de.flapdoodle.embed:de.flapdoodle.embed.process:2.1.2
+|         +--- org.apache.commons:commons-lang3:3.1 -> 3.8.1
+|         +--- net.java.dev.jna:jna:4.0.0 -> 4.5.2
+|         +--- net.java.dev.jna:jna-platform:4.0.0 -> 4.5.2
+|         |    \--- net.java.dev.jna:jna:4.5.2
+|         +--- org.apache.commons:commons-compress:1.18
+|         \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.26
++--- cz.jirutka.spring:embedmongo-spring:1.3.1
+|    +--- de.flapdoodle.embed:de.flapdoodle.embed.mongo:1.46.4 -> 2.2.0 (*)
+|    +--- de.flapdoodle.embed:de.flapdoodle.embed.process:1.40.1 -> 2.1.2 (*)
+|    +--- org.mongodb:mongo-java-driver:2.13.0 -> 3.10.2
+|    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.26
++--- org.springframework.boot:spring-boot-starter-test -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    +--- org.springframework.boot:spring-boot-test:2.2.0.M2
+|    |    \--- org.springframework.boot:spring-boot:2.2.0.M2 (*)
+|    +--- org.springframework.boot:spring-boot-test-autoconfigure:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot-test:2.2.0.M2 (*)
+|    |    \--- org.springframework.boot:spring-boot-autoconfigure:2.2.0.M2 (*)
+|    +--- com.jayway.jsonpath:json-path:2.4.0
+|    |    +--- net.minidev:json-smart:2.3
+|    |    |    \--- net.minidev:accessors-smart:1.2
+|    |    |         \--- org.ow2.asm:asm:5.0.4
+|    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2
+|    |    \--- jakarta.activation:jakarta.activation-api:1.2.1
+|    +--- junit:junit:4.12
+|    |    \--- org.hamcrest:hamcrest-core:1.3
+|    +--- org.assertj:assertj-core:3.12.2
+|    +--- org.hamcrest:hamcrest-core:1.3
+|    +--- org.hamcrest:hamcrest-library:1.3
+|    |    \--- org.hamcrest:hamcrest-core:1.3
+|    +--- org.mockito:mockito-core:2.25.1
+|    |    +--- net.bytebuddy:byte-buddy:1.9.7 -> 1.9.12
+|    |    +--- net.bytebuddy:byte-buddy-agent:1.9.7 -> 1.9.12
+|    |    \--- org.objenesis:objenesis:2.6
+|    +--- org.skyscreamer:jsonassert:1.5.0
+|    |    \--- com.vaadin.external.google:android-json:0.0.20131108.vaadin1
+|    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    +--- org.springframework:spring-test:5.2.0.M1
+|    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    \--- org.xmlunit:xmlunit-core:2.6.2
+\--- io.projectreactor:reactor-test -> 3.2.8.RELEASE
+     \--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
+
+testCompileOnly - Compile only dependencies for source set 'test'.
+No dependencies
+
+testImplementation - Implementation only dependencies for source set 'test'. (n)
++--- org.springframework.boot:spring-boot-starter-test (n)
+\--- io.projectreactor:reactor-test (n)
+
+testRuntime - Runtime dependencies for source set 'test' (deprecated, use 'testRuntimeOnly ' instead).
+No dependencies
+
+testRuntimeClasspath - Runtime classpath of source set 'test'.
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot:2.2.0.M2
+|    |    |    +--- org.springframework:spring-core:5.2.0.M1
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.0.M1
+|    |    |    \--- org.springframework:spring-context:5.2.0.M1
+|    |    |         +--- org.springframework:spring-aop:5.2.0.M1
+|    |    |         |    +--- org.springframework:spring-beans:5.2.0.M1
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |         +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.0.M1
+|    |    |              \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.0.M2
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.0.M2 (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.0.M2
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.11.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.11.2
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.26
+|    |    |         \--- org.slf4j:slf4j-api:1.7.26
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.4
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    \--- org.yaml:snakeyaml:1.24
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    |    +--- org.springframework:spring-web:5.2.0.M1
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.0
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.8
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.0
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.8
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.9.8
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.9.8 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.0.M2
+|    |    \--- io.projectreactor.netty:reactor-netty:0.8.6.RELEASE
+|    |         +--- io.netty:netty-codec-http:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final
+|    |         |    |    \--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-resolver:4.1.34.Final
+|    |         |    |         \--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-handler:4.1.34.Final
+|    |         |         +--- io.netty:netty-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |         +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |         \--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         +--- io.netty:netty-codec-http2:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-handler:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-codec-http:4.1.34.Final (*)
+|    |         +--- io.netty:netty-handler:4.1.34.Final (*)
+|    |         +--- io.netty:netty-handler-proxy:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-codec-socks:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    |    \--- io.netty:netty-codec:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-codec-http:4.1.34.Final (*)
+|    |         +--- io.netty:netty-transport-native-epoll:4.1.34.Final
+|    |         |    +--- io.netty:netty-common:4.1.34.Final
+|    |         |    +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |    +--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         |    \--- io.netty:netty-transport-native-unix-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-common:4.1.34.Final
+|    |         |         +--- io.netty:netty-buffer:4.1.34.Final (*)
+|    |         |         \--- io.netty:netty-transport:4.1.34.Final (*)
+|    |         \--- io.projectreactor:reactor-core:3.2.8.RELEASE
+|    |              \--- org.reactivestreams:reactive-streams:1.0.2
+|    +--- jakarta.validation:jakarta.validation-api:2.0.1
+|    +--- org.hibernate.validator:hibernate-validator:6.0.16.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.2.Final
+|    |    \--- com.fasterxml:classmate:1.3.4 -> 1.5.0
+|    +--- org.springframework:spring-web:5.2.0.M1 (*)
+|    +--- org.springframework:spring-webflux:5.2.0.M1
+|    |    +--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
+|    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    \--- org.springframework:spring-web:5.2.0.M1 (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.26
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.26
++--- org.springframework.boot:spring-boot-starter-data-mongodb-reactive -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    +--- org.springframework.data:spring-data-mongodb:2.2.0.M3
+|    |    +--- org.springframework:spring-tx:5.2.0.M1
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-context:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    +--- org.springframework:spring-expression:5.2.0.M1 (*)
+|    |    +--- org.springframework.data:spring-data-commons:2.2.0.M3
+|    |    |    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    |    |    +--- org.springframework:spring-beans:5.2.0.M1 (*)
+|    |    |    \--- org.slf4j:slf4j-api:1.7.26
+|    |    \--- org.slf4j:slf4j-api:1.7.26
+|    +--- org.mongodb:mongodb-driver:3.10.2
+|    |    +--- org.mongodb:bson:3.10.2
+|    |    \--- org.mongodb:mongodb-driver-core:3.10.2
+|    |         \--- org.mongodb:bson:3.10.2
+|    +--- org.mongodb:mongodb-driver-async:3.10.2
+|    |    +--- org.mongodb:bson:3.10.2
+|    |    \--- org.mongodb:mongodb-driver-core:3.10.2 (*)
+|    +--- org.mongodb:mongodb-driver-reactivestreams:1.11.0
+|    |    +--- org.mongodb:mongodb-driver-async:3.10.0 -> 3.10.2 (*)
+|    |    \--- org.reactivestreams:reactive-streams:1.0.2
+|    \--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
++--- io.springfox:springfox-swagger2:3.0.0-SNAPSHOT
+|    +--- io.swagger:swagger-annotations:1.5.20
+|    +--- io.swagger:swagger-models:1.5.20
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.9.0
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.26
+|    |    \--- io.swagger:swagger-annotations:1.5.20
+|    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT
+|    |    \--- io.springfox:springfox-core:3.0.0-SNAPSHOT
+|    |         +--- net.bytebuddy:byte-buddy:1.9.10 -> 1.9.12
+|    |         +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |         +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |         +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1
+|    |         |    +--- org.springframework:spring-beans:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    +--- org.springframework:spring-context:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    +--- org.springframework:spring-aop:5.1.4.RELEASE -> 5.2.0.M1 (*)
+|    |         |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |         \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1
+|    |              +--- org.springframework.plugin:spring-plugin-core:2.0.0.M1 (*)
+|    |              \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- io.springfox:springfox-schema:3.0.0-SNAPSHOT
+|    |    +--- io.springfox:springfox-core:3.0.0-SNAPSHOT (*)
+|    |    \--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    +--- io.springfox:springfox-swagger-common:3.0.0-SNAPSHOT
+|    |    +--- io.swagger:swagger-annotations:1.5.20
+|    |    +--- io.swagger:swagger-models:1.5.20 (*)
+|    |    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    |    +--- io.springfox:springfox-schema:3.0.0-SNAPSHOT (*)
+|    |    +--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT
+|    |    |    +--- io.github.classgraph:classgraph:4.1.7
+|    |    |    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    |    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    |    \--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    |    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    |    \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT (*)
+|    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    \--- org.mapstruct:mapstruct:1.3.0.Final
++--- io.springfox:springfox-swagger-ui:3.0.0-SNAPSHOT
++--- io.springfox:springfox-spring-webflux:3.0.0-SNAPSHOT
+|    +--- com.fasterxml:classmate:1.4.0 -> 1.5.0
+|    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE -> 2.0.0.M1 (*)
+|    +--- io.springfox:springfox-spi:3.0.0-SNAPSHOT (*)
+|    \--- io.springfox:springfox-spring-web:3.0.0-SNAPSHOT (*)
++--- de.flapdoodle.embed:de.flapdoodle.embed.mongo:2.2.0
+|    \--- de.flapdoodle.embed:de.flapdoodle.embed.process:2.1.2
+|         +--- org.apache.commons:commons-lang3:3.1 -> 3.8.1
+|         +--- net.java.dev.jna:jna:4.0.0 -> 4.5.2
+|         +--- net.java.dev.jna:jna-platform:4.0.0 -> 4.5.2
+|         |    \--- net.java.dev.jna:jna:4.5.2
+|         +--- org.apache.commons:commons-compress:1.18
+|         \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.26
++--- cz.jirutka.spring:embedmongo-spring:1.3.1
+|    +--- de.flapdoodle.embed:de.flapdoodle.embed.mongo:1.46.4 -> 2.2.0 (*)
+|    +--- de.flapdoodle.embed:de.flapdoodle.embed.process:1.40.1 -> 2.1.2 (*)
+|    +--- org.mongodb:mongo-java-driver:2.13.0 -> 3.10.2
+|    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.26
++--- org.springframework.boot:spring-boot-devtools -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot:2.2.0.M2 (*)
+|    \--- org.springframework.boot:spring-boot-autoconfigure:2.2.0.M2 (*)
++--- org.springframework.boot:spring-boot-starter-test -> 2.2.0.M2
+|    +--- org.springframework.boot:spring-boot-starter:2.2.0.M2 (*)
+|    +--- org.springframework.boot:spring-boot-test:2.2.0.M2
+|    |    \--- org.springframework.boot:spring-boot:2.2.0.M2 (*)
+|    +--- org.springframework.boot:spring-boot-test-autoconfigure:2.2.0.M2
+|    |    +--- org.springframework.boot:spring-boot-test:2.2.0.M2 (*)
+|    |    \--- org.springframework.boot:spring-boot-autoconfigure:2.2.0.M2 (*)
+|    +--- com.jayway.jsonpath:json-path:2.4.0
+|    |    +--- net.minidev:json-smart:2.3
+|    |    |    \--- net.minidev:accessors-smart:1.2
+|    |    |         \--- org.ow2.asm:asm:5.0.4
+|    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.26
+|    +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2
+|    |    \--- jakarta.activation:jakarta.activation-api:1.2.1
+|    +--- junit:junit:4.12
+|    |    \--- org.hamcrest:hamcrest-core:1.3
+|    +--- org.assertj:assertj-core:3.12.2
+|    +--- org.hamcrest:hamcrest-core:1.3
+|    +--- org.hamcrest:hamcrest-library:1.3
+|    |    \--- org.hamcrest:hamcrest-core:1.3
+|    +--- org.mockito:mockito-core:2.25.1
+|    |    +--- net.bytebuddy:byte-buddy:1.9.7 -> 1.9.12
+|    |    +--- net.bytebuddy:byte-buddy-agent:1.9.7 -> 1.9.12
+|    |    \--- org.objenesis:objenesis:2.6
+|    +--- org.skyscreamer:jsonassert:1.5.0
+|    |    \--- com.vaadin.external.google:android-json:0.0.20131108.vaadin1
+|    +--- org.springframework:spring-core:5.2.0.M1 (*)
+|    +--- org.springframework:spring-test:5.2.0.M1
+|    |    \--- org.springframework:spring-core:5.2.0.M1 (*)
+|    \--- org.xmlunit:xmlunit-core:2.6.2
+\--- io.projectreactor:reactor-test -> 3.2.8.RELEASE
+     \--- io.projectreactor:reactor-core:3.2.8.RELEASE (*)
+
+testRuntimeOnly - Runtime only dependencies for source set 'test'. (n)
+No dependencies
+
+(*) - dependencies omitted (listed previously)
+
+(n) - Not resolved (configuration is not meant to be resolved)
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed

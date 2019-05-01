@@ -10,7 +10,7 @@ import springfox.documentation.schema.TypeNameExtractor;
 import springfox.documentation.spring.web.plugins.DocumentationPluginsManager;
 
 @Configuration
-public class OverrideSwagger {
+public class OverrideSwaggerClasses {
 
     @Autowired private TypeNameExtractorReplaced typeNameExtractorReplaced;
 
